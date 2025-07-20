@@ -1,0 +1,192 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Reset and Base === */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f5f7fa;      /* Softened for a warmer feel */
+}
+
+/* === Main Layout Enhancements === */
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* New: Card header accent for section headings */
+.card-header-accent {
+  background: linear-gradient(90deg, #2546fd 0%, #463ddb 100%);
+  color: #fff;
+  border-radius: .5rem .5rem 0 0;
+  padding: 1rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: -1.5rem -1.5rem 1.5rem -1.5rem; /* Overflows top/sides for color pop */
+  letter-spacing: 0.01em;
+}
+
+/* === Shadows, Borders, Rounding === */
+.shadow {
+  box-shadow: 0 1px 6px 0 rgb(44 63 115 / 0.07), 0 2px 12px 0 rgb(44 63 115 / 0.03);
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.space-y-8 > * + * {
+  margin-top: 2rem;
+}
+
+/* === Grids and Spacing === */
+.grid {
+  display: grid;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.max-w-7xl {
+  max-width: 80rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+
+/* === Typography and Color Accents === */
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.text-blue-main {
+  color: #2563eb;
+}
+.text-green-main {
+  color: #17b26a;
+}
+.text-orange-main {
+  color: #fa9917;
+}
+.text-gray-dark {
+  color: #475569;
+}
+.text-body-muted {
+  color: #6b7280;
+}
+
+/* === Buttons & Badges === */
+.button-primary {
+  background: linear-gradient(80deg, #2546fd 0%, #463ddb 100%);
+  color: #fff;
+  border: none;
+  border-radius: .6rem;
+  padding: .7em 2em;
+  font-weight: 600;
+  box-shadow: 0 3px 14px rgb(80 92 177 / 0.14);
+  font-size: 1.05rem;
+  cursor: pointer;
+  letter-spacing: .01em;
+  transition: background .17s;
+}
+.button-primary:hover, .button-primary:focus {
+  background: linear-gradient(80deg, #463ddb 0%, #2546fd 100%);
+}
+.badge {
+  display: inline-block;
+  padding: 0.25em 1em;
+  border-radius: 12px;
+  font-size: 0.96em;
+  font-weight: 500;
+  vertical-align: middle;
+  background-color: #e0eafc;
+  color: #1d3b62;
+  letter-spacing: .01em;
+  margin-right: .5em;
+}
+.badge.green    { background: #dbf8e4; color: #20743b; }
+.badge.yellow   { background: #fffbe3; color: #c09806; }
+.badge.red      { background: #ffd5d8; color: #be353f; }
+.badge.purple   { background: #ede9fe; color: #a78bfa; }
+.badge.cyan     { background: #e0fbfc; color: #2e606e;}
+.badge.blue     { background: #e0eaff; color: #2546fd; }
+
+/* === Forms and Inputs === */
+input, select {
+  background-color: #f3f6fd;
+  border: 1.4px solid #e5e7eb;
+  border-radius: .5rem;
+  padding: .6em 1em;
+  font-size: 1rem;
+  margin-top: 2px;
+  transition: border .17s, box-shadow .17s;
+}
+input:focus, select:focus {
+  border-color: #2563eb;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 2px #b6ccfa55;
+}
+
+/* === Section Helpers === */
+.section-bg {
+  background: linear-gradient(90deg, #ebedfa 70%, #fcfcfe 100%);
+  border-radius: .5rem;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, #2546fd66 40%, #fff 100%);
+  margin: 2.2rem 0;
+  border: 0;
+  border-radius: 3px;
+}
+
+/* === Table Enhancements === */
+.table-container {
+  background: #f5f7fa;
+  border-radius: 0.7em;
+  padding: 1em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 12px 18px;
+  border-bottom: 1.8px solid #eceffd;
+  text-align: left;
+}
+th {
+  font-weight: 700;
+  background: #f4f8fd;
+  color: #1d3b62;
+}
+td {
+  color: #384660;
+}
+
+@media (max-width: 768px) {
+  .main-content, .container {
+    padding: 0 8px;
+  }
+  .grid, .gap-8 { gap: 1rem; }
+  .p-6 { padding: 1em; }
+  .space-y-8 > * + * { margin-top: 1.2rem; }
+}   
