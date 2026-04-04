@@ -1,4 +1,5 @@
-import { BigNumber, formatUnits } from "ethers";
+import { formatUnits } from "ethers";
+
 
 export function sqrtPriceX96ToPrice(sqrtPriceX96: bigint) {
   // price = (sqrtPriceX96 ** 2 * 1e12) / 2 ** 192
