@@ -1,0 +1,119 @@
+﻿node.exe : npm warn cli 
+npm v11.12.1 does not 
+support Node.js v18.20.8. 
+This version of npm 
+supports the following 
+node versions: `^20.17.0 
+|| >=22.9.0`. You can 
+find the latest version 
+at https://nodejs.org/.
+At C:\Users\VICTUS\AppData
+\Roaming\npm\npm.ps1:24 
+char:5
++     & "node$exe"  "$base
+dir/node_modules/npm/bin/n
+pm-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (n  
+  pm warn cli np...://n   
+ odejs.org/.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+
+> gas-tracker@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.4.2
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+Browserslist: browsers 
+data (caniuse-lite) is 10 
+months old. Please run:
+  npx update-browserslist-
+db@latest
+  Why you should do it 
+regularly: https://github.
+com/browserslist/update-db
+#readme
+ Γ£ô Compiled successfully in 2000ms
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./src/app/page.tsx
+8:8  Warning: 
+'WalletConnector' is 
+defined but never used.  @
+typescript-eslint/no-unuse
+d-vars
+
+./src/components/AuthProvi
+der.tsx
+42:6  Warning: React Hook 
+useEffect has a missing 
+dependency: 
+'supabase.auth'. Either 
+include it or remove the 
+dependency array.  react-h
+ooks/exhaustive-deps
+
+./src/components/Candlesti
+ckChart.tsx
+36:44  Error: Unexpected 
+any. Specify a different 
+type.  @typescript-eslint/
+no-explicit-any
+
+./src/components/WalletCon
+nector.tsx
+8:16  Error: Unexpected 
+any. Specify a different 
+type.  @typescript-eslint/
+no-explicit-any
+38:6  Warning: React Hook 
+useEffect has a missing 
+dependency: 
+'fetchBalances'. Either 
+include it or remove the 
+dependency array.  react-h
+ooks/exhaustive-deps
+52:21  Error: Unexpected 
+any. Specify a different 
+type.  @typescript-eslint/
+no-explicit-any
+
+./src/hooks/useWallet.ts
+7:20  Error: Unexpected 
+any. Specify a different 
+type.  @typescript-eslint/
+no-explicit-any
+8:38  Error: Unexpected 
+any. Specify a different 
+type.  @typescript-eslint/
+no-explicit-any
+
+./src/store/gasStore.ts
+38:51  Warning: 'get' is 
+defined but never used.  @
+typescript-eslint/no-unuse
+d-vars
+
+./src/utils/math.ts
+1:10  Warning: 
+'formatUnits' is defined 
+but never used.  @typescri
+pt-eslint/no-unused-vars
+
+info  - Need to disable 
+some ESLint rules? Learn 
+more here: https://nextjs.
+org/docs/app/api-reference
+/config/eslint#disabling-r
+ules

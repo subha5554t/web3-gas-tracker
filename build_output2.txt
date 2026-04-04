@@ -1,0 +1,122 @@
+﻿node.exe : npm warn cli 
+npm v11.12.1 does not 
+support Node.js v18.20.8. 
+This version of npm 
+supports the following 
+node versions: `^20.17.0 
+|| >=22.9.0`. You can 
+find the latest version 
+at https://nodejs.org/.
+At C:\Users\VICTUS\AppData
+\Roaming\npm\npm.ps1:24 
+char:5
++     & "node$exe"  "$base
+dir/node_modules/npm/bin/n
+pm-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (n  
+  pm warn cli np...://n   
+ odejs.org/.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+
+> gas-tracker@0.1.0 build
+> next build
+
+   Γû▓ Next.js 15.4.2
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+Browserslist: browsers 
+data (caniuse-lite) is 10 
+months old. Please run:
+  npx update-browserslist-
+db@latest
+  Why you should do it 
+regularly: https://github.
+com/browserslist/update-db
+#readme
+ Γ£ô Compiled successfully in 2000ms
+   Linting and checking validity of types ...
+
+./src/app/page.tsx
+8:8  Warning: 'WalletConnector' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/CandlestickChart.tsx
+36:44  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/WalletConnector.tsx
+8:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+38:6  Warning: React Hook useEffect has a missing dependency: 'fetchBalances'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+52:21  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/hooks/useWallet.ts
+7:20  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+8:38  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/store/gasStore.ts
+38:51  Warning: 'get' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/utils/math.ts
+1:10  Warning: 'formatUnits' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/6) ...
+ΓÜá∩╕Å  Node.js 18 and 
+below are deprecated and 
+will no longer be 
+supported in future 
+versions of 
+@supabase/supabase-js. 
+Please upgrade to Node.js 
+20 or later. For more 
+information, visit: https:
+//github.com/orgs/supabase
+/discussions/37217
+Error occurred 
+prerendering page 
+"/auth". Read more: https:
+//nextjs.org/docs/messages
+/prerender-error
+Error: Invalid 
+supabaseUrl: Must be a 
+valid HTTP or HTTPS URL.
+    at <unknown> (C:\Users
+\VICTUS\OneDrive\Desktop\w
+eb3-gas-tracker\.next\serv
+er\chunks\904.js:38:41229)
+    at new b7 (C:\Users\VI
+CTUS\OneDrive\Desktop\web3
+-gas-tracker\.next\server\
+chunks\904.js:38:41411)
+    at cm (C:\Users\VICTUS
+\OneDrive\Desktop\web3-gas
+-tracker\.next\server\chun
+ks\904.js:42:4467)
+    at e (C:\Users\VICTUS\
+OneDrive\Desktop\web3-gas-
+tracker\.next\server\app\p
+age.js:1:206139)
+    at <unknown> (C:\Users
+\VICTUS\OneDrive\Desktop\w
+eb3-gas-tracker\.next\serv
+er\app\page.js:137:1420)
+    at i (C:\Users\VICTUS\
+OneDrive\Desktop\web3-gas-
+tracker\.next\server\app\p
+age.js:137:1408) {
+  digest: '430924707'
+}
+Export encountered an 
+error on /auth/page: 
+/auth, exiting the build.
+ Γ¿» Next.js build worker 
+exited with code: 1 and 
+signal: null
